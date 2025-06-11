@@ -100,3 +100,5 @@
 - `Looping` is one of the ways a computer automates repetitive tasks.
 - Computers don't move to next line of code until looping process ends.
 - Choose a meaningful name for a variable that will hold each item in a list.
+- Any indented piece of code after `for` loop statement is executed before next loop. You can write as many of them as possible.
+- After a for loop, you might want your program to continue running or write other lines of code. You can write something wrapping up what has happened for `for` loop.
