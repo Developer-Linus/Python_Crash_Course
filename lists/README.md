@@ -85,6 +85,18 @@
 
 ## 4. Finding Length of a list
 
--We use `len()` function to find the lenght of a list. 
-- It gives the number of items in a list.
+-We use `len()` function to find the lenght of a list.
 
+- ## It gives the number of items in a list.
+
+# Working with Lists
+
+- Here, we'll discuss about about `looping` in lists to perform an action or set of actions on a list regardless of its length. As a result, we will be able to work more efficiently.
+
+## Looping Through an entire List
+
+- Python's `for` loop is great for performing same action on every item in a list.
+- Assume we have a list of items in a list. If we want to print each item, we will have to write line(s) of code for each item. If the items in the list changes, we have to change our code. `For` loop solves the problem of writing long pieces of code and changing lines of code every time item(s) in a list changes.
+- `Looping` is one of the ways a computer automates repetitive tasks.
+- Computers don't move to next line of code until looping process ends.
+- Choose a meaningful name for a variable that will hold each item in a list.
