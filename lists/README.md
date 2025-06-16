@@ -102,3 +102,30 @@
 - Choose a meaningful name for a variable that will hold each item in a list.
 - Any indented piece of code after `for` loop statement is executed before next loop. You can write as many of them as possible.
 - After a for loop, you might want your program to continue running or write other lines of code. You can write something wrapping up what has happened for `for` loop.
+
+# Avoiding Indentation Errors
+
+- Indentation in Python shows that the lines of code is connected to the line above it.
+- In writing programs, we might find ourselves forgetting to indent or indenting what is not suppose to be indented.
+
+# Making Numerical Lists
+
+- we can use `range()` function.
+- we convert range values into a list using `list()` function. We pass range values as argument to the list function.
+
+# Working with Part of a List
+
+- We can work with specific elements in a list. In Python, this is called a `slice`.
+
+## Slicing a List
+
+- You specify the first and second indices of the items you want for a slice. The program stops before the second index and returns the elements.
+- You can create a subset of a list by specifying the first and second indices.
+- You can loop through a list slice using `for` loop.
+
+## Copying a List
+
+- You might want a copy of the list you have and modify later to add other elements. This is where copying existing list is key.
+- We can create a slice of the full list by not providing the first and second indices.
+  `list[:]`
+- 
