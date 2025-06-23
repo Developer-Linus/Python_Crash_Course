@@ -45,3 +45,28 @@
 ## Checking Whether a Value is not in a List
 
 - Use the keyword `not in`.
+
+# If Statement
+
+- Once you understand `conditional tests`, you can easily write `if` statements.
+- There are various types of `if` statements. The one you choose depend on the number of conditions you want to test.
+
+## Simple `if` Statements
+
+- Has one test and one action.
+
+```
+if conditional test:
+    do something
+```
+
+## `If-Else` Statements
+
+- Actualizes a scenario where you want to take one action for a conditional test and a different action for all other cases.
+- `Else` block is executed when a conditional test fails. You define an action or series of actions to be implemented.
+- Used when you want a Python program to execute one of the two possible actions.
+
+## `if-elif-else` chain
+
+- Used for testing more than two possible situations.
+-
