@@ -70,3 +70,19 @@ if conditional test:
 
 - Used for testing more than two possible situations.
 -
+
+# Using `if` Statements with Lists
+
+- Combining if and lists give us powers to check conditions any time we want to check for some conditions of items in a list.
+
+## Checking for Special Items
+
+- You can use if-else variation to achieve your special conditions in your lists.
+
+## Checking that a list is not empty
+
+- if-else can be used to check if a list is empty or not and execute relevant piece of code.
+
+## Using Multiple Lists
+
+-
