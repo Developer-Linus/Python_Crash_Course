@@ -25,4 +25,20 @@
 ## Modifying Values in a Dictionary
 
 - To modify a dictionary's value, you give the name of the dictionary and provide the key in square brackets then give its new associated value.
--
+
+## Removing Key-Value Pairs
+
+- Use `del` statement to remove key-value pairs you no longer need.
+- After `del`, you give name of the dictionary followed by its key in square brackets.
+  > Deleted key-value pairs are permanently removed.
+
+# A Dictionary of Similar Objects
+
+- You can use a dictionary to store one kind of information for many objects.
+
+# Looping Through a Dictionary
+
+- Can be looked using its key or its value: You can loop through key-value pairs or through keys.
+- `items()` method returns a list of key-value pairs for a dictionary.
+- `keys()` method tells Python to pull all the keys from a dictionary.
+- The default behavior for looping a dictionary is through `keys`. You can use the `keys()` method or leave it depending on the readability of your code.
