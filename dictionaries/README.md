@@ -42,3 +42,15 @@
 - `items()` method returns a list of key-value pairs for a dictionary.
 - `keys()` method tells Python to pull all the keys from a dictionary.
 - The default behavior for looping a dictionary is through `keys`. You can use the `keys()` method or leave it depending on the readability of your code.
+- `keys()` function always return a list of keys present in the dictionary.
+
+## Looping through a dictionary's key in order
+
+- Keys are always returned with their associated value but not in any specific order.
+- What we value most is how a key and its associated value are returned.
+- We can specify the order using `sorted()` function by wrapping all the keys in it.
+
+## Looping through all values in a dictionary
+
+- If interested in the values in the dictionary, use `values()` method to get a list of all the values in a dictionary.
+-
