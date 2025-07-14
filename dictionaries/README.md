@@ -53,4 +53,11 @@
 ## Looping through all values in a dictionary
 
 - If interested in the values in the dictionary, use `values()` method to get a list of all the values in a dictionary.
+
+# Nesting
+
+- At times, you want to nest a set of dictionaries in a list or a list of items as a value in a dictionary. Here is where the concept of `nesting` comes in.
+
+## A List of dictionaries
+
 -
