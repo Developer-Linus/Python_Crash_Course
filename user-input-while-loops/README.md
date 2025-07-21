@@ -32,4 +32,19 @@
 # Introducing While Loop
 
 - The `for` loop takes a collection of items and execute a block of code for each item in the collection.
-- In contrast, `while` loop runs as long as certain condition is true.
+- In contrast, `while` loop runs as long as a certain condition is true.
+- Most of the programs we interact with use while loops. For example, in a game, we need it to keep running as long as we want to play it. We need to be in control to tell it to quit when we no longer want to play. Programs lose fun part of it if they stop when we want to continue doing something or doesn't quit if we want to stop it.
+
+## Letting the User Choose When to Quit
+
+- You wrap the section of your program you want to keep running in `while` loop and provide the condition that must be true to keep the program running. Provide a way in which a user should stop the program from running.
+
+## Using Flag
+
+- Using single `while` loop is not efficient for complicated programs where more than one events can stop the program from running.
+- For a program that runs as many conditions are true, you define a variable that determines wheter or not the whole program is active.
+- This variable, called a `flag`, acts as a signal to the program.
+- We can set our program to run as long as the flag is set to true. Then we define other sets of events that sets flag to false to stop the program from running.
+- As a result, overall `while` statement only checks if `flag` is true or false to keep our program running.
+- All the other tests that can set flag to false are neatly organized in the rest of the program.
+- 
