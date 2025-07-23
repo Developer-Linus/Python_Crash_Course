@@ -47,4 +47,8 @@
 - We can set our program to run as long as the flag is set to true. Then we define other sets of events that sets flag to false to stop the program from running.
 - As a result, overall `while` statement only checks if `flag` is true or false to keep our program running.
 - All the other tests that can set flag to false are neatly organized in the rest of the program.
-- 
+
+## Using `break` to exit a loop
+
+- To break a while loop and prevent remaining code from running, we use a `break` keyword. When the program reaches a break statement, it exits the loop immediately even if the condition is still true.
+- `break` statement applies to any loop in Python, including for.
