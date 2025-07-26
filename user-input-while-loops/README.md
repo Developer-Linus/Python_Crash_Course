@@ -52,3 +52,34 @@
 
 - To break a while loop and prevent remaining code from running, we use a `break` keyword. When the program reaches a break statement, it exits the loop immediately even if the condition is still true.
 - `break` statement applies to any loop in Python, including for.
+
+## Using Continue in a Loop
+
+- We use `continue` statement for the loop to start over based on conditional test instead of breaking out entirely.
+
+## Avoiding Infinite Loops
+
+- Every `while` loop needs a way of stopping it so that it won't run forever.
+- As a programmer, it is critical to test all the `while` loops you write to ensure it stops as needed. If you need a user to enter a given value, enter the value and verify if the program stops. If not, scrutinize your program and adjust the necessary sections to behave as expected.
+
+# Using a While Loop with Lists and Dictionaries
+
+- To keep track of records of pieces of information, we utilize lists and dictionaries in combination with `while` loops.
+- A `for` loop is effective for looping through lists, but you cannot modify the lists as Python will have trouble tracking the items in a list.
+- On the other hand, `while` loops allow you to modify lists as you work on them.
+- Using `while` loop with lists and dictionaries enable us to collect, store, and organize lots of inputs for us to examine and report on later.
+
+## Moving Items from One List to Another
+
+- Assuming we've registered users awaiting verification before we move them to a list of verified users, how can we achieve this?
+- One of the ways is to use a `while` loop where we extract users from unconfirmed list as we verify them and add to the list of confirmed users.
+
+## Removing All Instances of Specific Values from a List
+
+- `remove()` function only works if we have single instance of a value in list. What if we want to remove instances of repeated values from a list?
+- The answer: Run `while` loop in the list until the repeated value you want to remove no longer exists.
+
+## Filling a Dictionary with User Input
+
+- You can prompt as much input as you want through each pass through a `while` loop.
+- Take for example a scenario where you are taking a poll and you want to associate every response with its name.
