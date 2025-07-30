@@ -30,5 +30,45 @@
 ### Positional Arguments
 
 - When you call a function, Python matches arguments with parameters in function definition.
-- The easiest way to do this based on the order of the arguments provided. Values matched up this way are called `positional arguments.`
--
+- The easiest way to do this is to match them based on the order of the arguments provided. Values matched up this way are called `positional arguments.`
+- Order matters in positional arguments. Follow the order you used in function definition as you will get errors or undesired results if they don't match.
+
+### Keyword Arguments
+
+- A `keyword argument` is a name-value pair that is passed when calling a function.
+- You associate each name with a value.
+- In this case, the order doesn't matter as every parameter declared in function definition has its exact value matched. Python knows where each value should go
+- While using keyword arguments, ensure you use exact names of parameters used during function definition.
+
+### Default Value
+
+- When defining a function, you can give a `default value` to the parameters.
+- During `function calling`, the argument you provide is used; otherwise, the default value is used.
+- We use default values to ease the manner in which we call our functions depending on its frequent usage.
+  > While using default values, it is recommended to place them as the last parameters in the function to adhere to the order of arguments while calling the functions.
+  > The way you call your function doesn't matter so long as Python can correctly matches parameters in function definition and arguments in function calling.
+
+### Avoiding Argument Errors
+
+- With the help of Python traceback, you can easily idenfity the issue with your functions if you provide less or more arguments while calling your function.
+- Always ensure you use descriptive variable names so that it becomes easier for you or any other person using your code.
+
+## Return Values
+
+- It is not always that functions displays its output.
+- At times, it processes some inputs and return output.
+- The output returned is called `return value`.
+- The `return` statement takes a value inside the function and returns it to the line that called the function.
+  > You need to create a variable to hold the value that a function returns.
+
+### Making an Argument Optional
+
+- Use default values to make an argument optional. This is useful for scenarios where users using the function want to provide extra information or not.
+
+### Returning a Dictionary
+
+- A function can return any type of value you want it to, including complicated data structures like lists and dictionaries.
+
+## Using a Function with a While Loop
+
+- 
