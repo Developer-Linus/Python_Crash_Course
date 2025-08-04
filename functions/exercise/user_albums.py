@@ -15,4 +15,3 @@ while active:
         break
     created_album = make_album(album_artist, album_title)
     print(created_album)
-
