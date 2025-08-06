@@ -71,4 +71,82 @@
 
 ## Using a Function with a While Loop
 
-- 
+- You can use a function with a `while` loop if there is some data collection from users.
+- Ensure you handle well how users can quit the program.
+
+## Passing a List
+
+- Sometimes, I would find it useful to pass list to a function.
+- When you pass a list to a function, the function will have access to the contents of the list.
+
+## Modifying a List in a Function
+
+- A function will modify the list if you pass a list as an argument.
+- The modification that a function does to a list is permanent.
+
+## Preventing a Function from Modifying a List
+
+- At times you want to remain with the original list that you pass to the function.
+- By default, the function modifies the list and it can leave it empty.
+- To address this, you pass a copy of the list to the function.
+  > ` function_name(list_name[:])`
+- The slice notation `[:]` is used to create a copy of the list to pass to the funciton. 
+## Passing an Arbitrary Number of Arguments
+- At times, I don't know ahead of time the number of arguments will need.
+- Fortunately, Python allows the calling of arbitrary arguments in calling statement. 
+- We use an asterik `*` before a variable. Automatically, this tells Python to create a tuple that will pack its values receives and use them.
+- Python packs everything, including even one argument passed into a tuple.
+- You can then use `for` loop to tailor the function to your needs.
+## Mixing Positional and Arbitrary Arguments
+- If I want to use different arguments in my function, I have to place arbitrary parameters at the end during function definition.
+- This is because Python matches positional and keyword arguments before collecting other arguments in the final parameter.
+## Using Arbitrary Keyword Arguments
+- This one is used if you don't know ahead of time the number of key-value pairs that will be passed in the calling statement.
+- We use double asteriks (**) to tell Python to create an empty dictionary for holding the key-value pairs that a user will provide. 
+> Arbitrary arguments use single asterik while arbitrary keyword arguments use double asterik. The variables passed as arguments for arbitrary arguments are stored in a tuple unlike a dictionary that stores key-value pairs of the arbitrary keyword arguments.
+## Storing Your Functions in Modules
+- Advantage of functions: separate blocks of code from your main program.
+- It will be much easier to follow my program given that I have descriptive functions names. 
+- I can go a step further by creating my functions in a file called `module` and later importing it to my main program. 
+- An `import` statement tells Python to make code in a module available for use in the current program file.
+- Advantages of storing functions in a separate file:
+  > allows you to hide the details code of your program and focus on higher-level logic.
+  > allows you to reuse functions in many different parts of your program.
+  > I can share those separate functions files with other programmers without sharing my main program.
+- When I know how to import functions, I can easily use other libraries of functions other programmers have written. 
+- The ways of importing a module include:
+### 1. Importing an Entire Module
+- First, you need to have a `module`, file ending in *.py*, that has your function.
+- You now import that module in your current program file you want to use it.
+- The `import` statement tells Python to copy all functions in a module and make it available in the current program.
+  ```
+  import module_name
+  ```
+- using this approach makes all functions in the module available. To use specific function, you write name of the module followed by dot(.) then name of the function as:
+  ```
+  module_name.function_name()
+  ```
+### 2. Importing Specific Functions
+- General syntax for this approach is:
+  ```
+  from module_name import function_name
+  ```
+- From a module, you can import as many functions as you want separated by a comma.
+  ```
+  from module_name import function1, function2
+  ```
+- Using this approach, you don't use dot notation to access and use your function because you've explicitly specified in the `import` statement.
+### 3. Using `as` to Give a Function an Alias
+- If your function name conflicts with an existing name in your program or your function's name is too long, you use a short, unique `alias` that is an alternate name similar to nickame to the function.
+- General syntax:
+  ```
+  from module_name import function_name as fn
+  ```
+- This approach renames function name, function_name, to fn. So when we will be calling the function, we will use fn and not function_name.
+### 4. Using `as` to Give a Module an Alias
+- You can also give a module an alias.
+- This is a short name that will make calling functions quicker.
+- General syntax:
+  ```
+  import module_name as md
+  ```

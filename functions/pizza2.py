@@ -1,0 +1,11 @@
+def make_pizza(*toppings):
+    """
+    Print the list of toppings that have been requested.
+    """
+    print("\nMaking pizza with the following toppings. ")
+    for topping in toppings:
+        print("- " + topping)
+
+
+make_pizza("pepperoni")
+make_pizza("mushroom", "green peppers", "cheese")
