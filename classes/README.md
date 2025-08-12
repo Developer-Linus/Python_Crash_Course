@@ -51,4 +51,24 @@
   - You pass the new value to the method that updates internally.
   ### 3. Incrementing An Attribute's Value Through a Method
   - Sometimes, you would want to increment attribute's value by certain amount instead of providing a new value.
-  -  
+## Inheritance
+- You don't always have to write a class from scratch.
+- If the class you want to create is a special version of existing class, you use `inheritance` to create it.
+- When one class inherits from another class, it automatically takes on all the attributes and methods of the first class.
+- The original class is called `parent` class and the new class is called `child` class.
+- The new class is free to define its own attributes and methods.
+### The __init__() Method of a Child Class
+- The task that Python has when creating an instance from a child class is to assign values to attributes in the parent class.To do this, the `__init__()` method in the child class needs help from the parent class.
+- Parent and child must be on the same file or import it appropriately to make it accessible and should be above child.
+- The name of the parent must be included in paranthesis after name of child class.
+- `super()` is a special function in Python that tells it to make connections between parent and child class.
+### Defining Attributes and Methods for Child Class
+- Once you've child class, you can define its own new attributes and methods to differentiate it from the parent.
+## Overriding Methods from Parent Class
+- You can override method in the parent class that doesn't fit what you want to model with the child class.
+- You achieve this by defining the method in child class with the same name as the method you want to override in the parent class. This way, Python will use what is in the child class and disregard what is in the parent class.
+## Instances as Attributes
+- When modelling something from real-world in code, you add more and more detail to class.
+- Your number of attributes and methods grows increasing the length of your files. 
+- When this happens, you recognize that part of one class can be written as a separate class.
+- You break your large class into smaller classes that work together.
