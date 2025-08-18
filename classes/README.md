@@ -72,3 +72,6 @@
 - Your number of attributes and methods grows increasing the length of your files. 
 - When this happens, you recognize that part of one class can be written as a separate class.
 - You break your large class into smaller classes that work together.
+- If you want to call the method inside the attribute of the class, you use the class's attribute to access it.
+## Modelling Real-World Objects
+- 
