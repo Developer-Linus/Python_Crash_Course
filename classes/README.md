@@ -74,4 +74,5 @@
 - You break your large class into smaller classes that work together.
 - If you want to call the method inside the attribute of the class, you use the class's attribute to access it.
 ## Modelling Real-World Objects
+- As an engineer, at times, you reach a point of asking yourself questions while modelling real-world objects using code. With practice, you will find the efficient ways of implementing. At first, so long your code facilitates what it is intended to do, don't be discouraged. This comes with experience.
 - 
