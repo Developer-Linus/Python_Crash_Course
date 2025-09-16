@@ -131,4 +131,14 @@
 
 ### Importing All Classes from a Module
 
--
+- You can import every class from a module using the syntax.
+- `from module_name import *`.
+- This method is highly discouraged for two key reasons:
+  1. It is helpful in your import statement to give the names of classes your program will us. 
+  2. It will be hard to diagnose a scenario whereby one of the names in your current file conflicts with one for the imported programs.
+> The best approach is to import the whole module in the file you program lives in. You will then use the syntax `module_name.class_name` when you want to use specific class. This way one can easily see where the imported module is used. Additionally, there will be no name conflicts in your program file.
+### Importing a Module into a Module
+- At times, you spread out your classes over several modules to avoid one file growing too large or keeping unrelated classes in one file.
+- With this, you might find that one class in one module depends on another class in another module.
+- When this happens, you can import the required class into the first module.
+- 
